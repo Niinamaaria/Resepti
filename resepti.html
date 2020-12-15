@@ -1,0 +1,30 @@
+<html> <body>
+<script type="text/javascript" src="resepti.js"></script>
+
+<h1>Reseptiarvontakone</h1>
+
+<h3>Tervetuloa Reseptiarvontakoneeseen! Syötä tiedot niin kone arpoo sopivan reseptin.</h3><br />
+<p>Valitse ensin proteiini: </p>
+
+<input type="radio" name="proteiini" id="liha">
+<label for="liha">Liha</label><br />
+<input type="radio" name="proteiini" id="kana">
+<label for="kana">Kana</label><br />
+<input type="radio" name="proteiini" id="kasvis">
+<label for="kasvis">Kasvisproteiini</label><br />
+
+<p>Helppous (voit valita useamman): </p>
+
+<input type="checkbox" name="vaikeus" id="helppo">
+<label for="helppo">Helppo</label>
+<input type="checkbox" name="vaikeus" id="normaali">
+<label for="normaali">Normaali</label>
+<input type="checkbox" name="vaikeus" id="vaativa">
+<label for="vaativa">Vaativa</label><br />
+
+
+<button onclick=resepti()>Arvotaan resepti!</button>
+
+<div id="out"></div>
+
+</body></html>
